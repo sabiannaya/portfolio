@@ -1,5 +1,5 @@
 <script setup>
-const imgLocation = "../../public/myPhoto.jpeg";
+const imgLocation = "../public/myPhoto.jpeg";
 </script>
 
 <template>
