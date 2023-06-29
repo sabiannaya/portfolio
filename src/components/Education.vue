@@ -40,7 +40,7 @@ const logo = [
                             <p class="text-teal-100 font-semibold text-3xl">Universitas Pendidikan Indonesia</p>
                             <p class="text-teal-100 text-2xl">Computer Science</p>
                             <p class="text-slate-300 text-xl">2020 - Present</p>
-                            <p class="text-slate-300 text-xl">Current GPA: 3.79</p>
+                            <p class="text-slate-300 text-xl">Current GPA: 3.76</p>
                             <p class="text-slate-300 text-xl">PTESOL Score: 570</p>
                         </span>
                     </div>
