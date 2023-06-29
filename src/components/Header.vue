@@ -20,9 +20,9 @@ import { RouterLink } from 'vue-router';
                 <p class="text-teal-400">C.</p>
                 <p class="text-teal-100">Projects</p>
             </router-link>
-            <a href="mailto:sabiannaya@upi.edu" class="bg-teal-800 p-2 rounded shadow-md hover:bg-teal-600">
+            <!-- <a href="mailto:sabiannaya@upi.edu" class="bg-teal-800 p-2 rounded shadow-md hover:bg-teal-600">
                 <p class="text-teal-300">Email me!</p>
-            </a>
+            </a> -->
         </div>
     </nav>
 </template>
