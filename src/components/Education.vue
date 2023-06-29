@@ -2,11 +2,11 @@
 const logo = [
     {
         name: "SMAN22",
-        path: "../../public/edulogo/SMAN22.jpg"
+        path: "./edulogo/SMAN22.jpg"
     },
     {
         name: "UPI",
-        path: "../../public/edulogo/upi.jpg"
+        path: "./edulogo/upi.jpg"
     }
 ]
 </script>

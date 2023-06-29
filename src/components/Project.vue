@@ -2,41 +2,41 @@
 const meatengoImg = [
     {
         name: "logo",
-        path: "../../public/meatengo/meatengo logo.png"
+        path: "./meatengo/meatengo logo.png"
     },
     {
         name: "admin",
-        path: "../../public/meatengo/[admin] inventory management.png"
+        path: "./meatengo/[admin] inventory management.png"
     },
     {
         name: "cashier",
-        path: "../../public/meatengo/[cashier] dashboard.png"
+        path: "./meatengo/[cashier] dashboard.png"
     },
 ];
 
 const perpuskomImg = [
     {
         name: "splash_screen",
-        path: "../../public/perpuskom/splash screen.png"
+        path: "./perpuskom/splash screen.png"
     },
     {
         name: "book_detail",
-        path: "../../public/perpuskom/book detail.png"
+        path: "./perpuskom/book detail.png"
     },
     {
         name: "welcome_screen",
-        path: "../../public/perpuskom/welcome screen.png"
+        path: "./perpuskom/welcome screen.png"
     }
 ];
 
 const smartEnglishImg = [
     {
         name: "desktop",
-        path: "../../public/smart english/Desktop.png",
+        path: "./smart english/Desktop.png",
     },
     {
         name: "login",
-        path: "../../public/smart english/login.png"
+        path: "./smart english/login.png"
     }
 ];
 
