@@ -31,7 +31,7 @@ const socials = [
         <ul class="flex lg:flex-col gap-10">
             <li v-for="(item, index) in socials" :key="index">
                 <a :href="item.link" target="_blank">
-                    <i class="fa-2xl text-teal-400" :class="item.class"></i>
+                    <i class="fa-2xl text-teal-400 hover:text-teal-200" :class="item.class"></i>
                 </a>
             </li>
         </ul>
@@ -44,8 +44,12 @@ const socials = [
 
     <div class="flex lg:flex-col items-center gap-10 w-fit h-fit fixed bottom-3 lg:bottom-0 -right-16">
         <!-- email -->
-        <p class="lg:rotate-90 lg:-translate-y-28 text-lg text-teal-100 martian-mono" style="letter-spacing: 5pt;">Sabiannaya@upi.edu</p>
-
+        <a href="mailto:sabiannaya@upi.edu">
+            <p class="lg:rotate-90 lg:-translate-y-28 text-lg text-teal-100 martian-mono hover:text-teal-300" style="letter-spacing: 5pt;">
+                Sabiannaya@upi.edu
+            </p>
+        </a>
+            
         <!-- line for big screen -->
         <div class="hidden lg:inline-block lg:h-24 lg:w-0 h-0 w-0 border border-lime-50">
             &nbsp;

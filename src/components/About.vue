@@ -3,7 +3,7 @@ const bandungImg = "../public/bandung.jpeg";
 </script>
 
 <template>
-    <div class="h-[100vh] w-screen flex flex-col items-center justify-center">
+    <div class="flex flex-col items-center justify-center">
         <div class="flex flex-row items-center">
             <span class="w-[55vw] h-full justify-center flex flex-col gap-5">
                 <span
@@ -11,19 +11,16 @@ const bandungImg = "../public/bandung.jpeg";
                     About Me
                 </span>
                 <span class="border border-teal-100 w-[50vw] px-5 pt-16 pb-8">
-                    <p class="text-teal-300 text-xl">Hello! My name is Sabian. I was born in July 2002 at Bandung, West
-                        Java, Indonesia. I am now a Computer Science student at Universitas Pendidikan Indonesia
-                        that have a huge interest in technology development. I always eager to learn new things especially
-                        anything
-                        that relate with technology.
+                    <p class="text-teal-300 text-xl">Hello! My name is Sabian. I was born in July 2002 in Bandung, West
+                        Java, Indonesia. I am currently a Computer Science student at Universitas Pendidikan Indonesia
+                        with a strong interest in technology development. I'm always eager to learn new things, especially
+                        anything related to technology.
                     </p>
-                    <p class="text-teal-300 text-xl pt-5">During the college i have learned many programming languages and
-                        subjects, 'Website Development' is my one of current favorite subject.
-                        This interest was started way back when i am trying to make a exercise project for a assignment, i
-                        have aknowledge that nothing is easy but i was feeling that this particular subject was at least
-                        enjoyable. From that on, i've decided to explore Web Development more.</p>
+                    <p class="text-teal-300 text-xl pt-5">During college, I have learned many programming languages and
+                        subjects. 'Website Development' is one of my current favorite subjects.
+                        This interest started when I was working on an exercise project for an assignment. I realized that nothing is easy, but I found this particular subject to be enjoyable. Since then, I have decided to explore Web Development further.</p>
                     <p class="text-slate-300 text-lg pt-5">
-                        List of framework/technologies i have learned/been working with:
+                        List of frameworks/technologies I have learned/been working with:
                     <div class="grid grid-cols-3 pt-3">
                         <div>
                             <ol class="px-10 list-disc text-slate-400 text-lg">
@@ -54,4 +51,3 @@ const bandungImg = "../public/bandung.jpeg";
         </div>
     </div>
 </template>
-
