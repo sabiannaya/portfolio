@@ -21,14 +21,14 @@ const socials = [
 </script>
 
 <template>
-    <div class="flex lg:flex-col items-center gap-10 w-fit h-fit fixed bottom-3 lg:bottom-0 lg:left-10">
+    <div class="hidden sm:flex sm:flex-col items-center gap-10 w-fit h-fit fixed bottom-3 sm:bottom-0 sm:left-10">
         <!-- line for big screen -->
-        <div class="inline-block lg:hidden h-0 w-24 border border-lime-50">
+        <div class="inline-block sm:hidden h-0 w-24 border border-lime-50">
             &nbsp;
         </div>
 
         <!-- socials -->
-        <ul class="flex lg:flex-col gap-10">
+        <ul class="flex sm:flex-col gap-10">
             <li v-for="(item, index) in socials" :key="index">
                 <a :href="item.link" target="_blank">
                     <i class="fa-2xl text-teal-400 hover:text-teal-200" :class="item.class"></i>
@@ -37,29 +37,28 @@ const socials = [
         </ul>
 
         <!-- line for small screen -->
-        <div class="hidden lg:inline-block lg:h-24 lg:w-0 h-0 w-0 border border-lime-50">
+        <div class="hidden sm:inline-block sm:h-24 sm:w-0 h-0 w-0 border border-lime-50">
             &nbsp;
         </div>
     </div>
 
-    <div class="flex lg:flex-col items-center gap-10 w-fit h-fit fixed bottom-3 lg:bottom-0 -right-16">
+    <div class="hidden sm:flex sm:flex-col items-center gap-10 w-fit h-fit fixed bottom-3 sm:bottom-0 -right-16">
         <!-- email -->
         <a href="mailto:sabiannaya@upi.edu">
-            <p class="lg:rotate-90 lg:-translate-y-28 text-lg text-teal-100 martian-mono hover:text-teal-300" style="letter-spacing: 5pt;">
+            <p class="sm:rotate-90 sm:-translate-y-28 text-sm text-teal-100 martian-mono hover:text-teal-300" style="letter-spacing: 5pt;">
                 Sabiannaya@upi.edu
             </p>
         </a>
             
         <!-- line for big screen -->
-        <div class="hidden lg:inline-block lg:h-24 lg:w-0 h-0 w-0 border border-lime-50">
+        <div class="hidden sm:inline-block sm:h-24 sm:w-0 h-0 w-0 border border-lime-50">
             &nbsp;
         </div>
 
         <!-- line for small screen -->
-        <div class="inline-block lg:hidden h-0 w-24 border border-lime-50">
+        <div class="inline-block sm:hidden h-0 w-24 border border-lime-50">
             &nbsp;
         </div>
     </div>
 </template>
 
-<style scoped></style>

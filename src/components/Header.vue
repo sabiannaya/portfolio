@@ -1,13 +1,51 @@
 <script setup>
 import { RouterLink } from 'vue-router';
+import { ref } from 'vue';
+import { Bars3Icon } from '@heroicons/vue/24/solid';
+
+
+const CVUrl = "https://drive.google.com/file/d/1yPnxrwVsv_OkbRVjN2WJ6gLNkK4ovkkp/view?usp=sharing";
+let isShowingNavCollapse = ref(false);
+
+const toggleNavCollapse = () => {
+    if (isShowingNavCollapse.value === true) isShowingNavCollapse.value = false;
+    else isShowingNavCollapse.value = true;
+}
+
 </script>
 
 <template>
-    <nav class="px-10 border-b border-lime-100 flex flex-row justify-between items-center">
+    <section class="md:px-10 py-5 px-5 flex flex-row justify-between items-center" :class="{'border-lime-100 border-b': !isShowingNavCollapse}">
         <div>
-            <router-link to="/#intro" class="martian-mono text-4xl text-teal-100">Sabiannaya.</router-link>
+            <router-link to="/#intro"
+                class="martian-mono text-xl sm:text-2xl md:text-4xl text-teal-100">Sabiannaya.</router-link>
         </div>
-        <div class="flex flex-row items-center gap-8 lg:gap-16 text-xl poppins">
+        <!-- nav on desktop -->
+        <nav class="hidden sm:flex sm:flex-row sm:items-center sm:gap-8 lg:gap-16 text-xl poppins">
+            <router-link class="flex flex-row gap-2" to="/#about">
+                <p class="text-teal-400">A.</p>
+                <p class="text-teal-100 hover:text-teal-400">About</p>
+            </router-link>
+            <router-link class="flex flex-row gap-2" to="/#education">
+                <p class="text-teal-400">B.</p>
+                <p class="text-teal-100 hover:text-teal-400">Education</p>
+            </router-link>
+            <router-link class="flex flex-row gap-2" to="/#project">
+                <p class="text-teal-400">C.</p>
+                <p class="text-teal-100 hover:text-teal-400">Projects</p>
+            </router-link>
+            <a :href="CVUrl" target="_blank" class="border border-teal-400 rounded-lg text-teal-400 py-2 px-5 flex items-center justify-center hover:bg-teal-400 hover:text-slate-900 hover:font-semibold">
+                <p>CV</p>
+            </a>
+        </nav>
+        <!-- three bars button on mobile -->
+        <div class="sm:hidden border rounded-md">
+            <bars3-icon class="w-7 h-7 m-1 text-lime-200 cursor-pointer" @click="toggleNavCollapse()" />
+        </div>
+    </section>
+    <!-- nav on mobile -->
+    <div v-if="isShowingNavCollapse">
+        <nav class="bg-slate-800 flex flex-col items-center justify-center  py-5 gap-3 text-xl">
             <router-link class="flex flex-row gap-2" to="/#about">
                 <p class="text-teal-400">A.</p>
                 <p class="text-teal-100">About</p>
@@ -20,9 +58,6 @@ import { RouterLink } from 'vue-router';
                 <p class="text-teal-400">C.</p>
                 <p class="text-teal-100">Projects</p>
             </router-link>
-            <!-- <a href="mailto:sabiannaya@upi.edu" class="bg-teal-800 p-2 rounded shadow-md hover:bg-teal-600">
-                <p class="text-teal-300">Email me!</p>
-            </a> -->
-        </div>
-    </nav>
+        </nav>
+    </div>
 </template>

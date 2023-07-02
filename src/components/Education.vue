@@ -22,7 +22,7 @@ const logo = [
                 <div class="border border-teal-100 px-10 pt-16 pb-8">
                     <div class="flex flex-row gap-10">
                         <span class="border-r border-lime-100 pr-10">
-                            <img :src="logo[0].path" class="w-40"/>
+                            <img :src="logo[0].path" class="w-32 h-24 lg:w-48 lg:h-48"/>
                         </span>
                         <span class="flex flex-col justify-around">
                             <p class="text-teal-100 font-semibold text-3xl">SMA Negeri 22 Bandung</p>
@@ -32,9 +32,9 @@ const logo = [
                     </div>
                 </div>
                 <div class="border border-teal-100 px-10 py-8">
-                    <div class="flex flex-row gap-10">
+                    <div class="flex flex-row items-center gap-10">
                         <span class="border-r border-lime-100 pr-10">
-                            <img :src="logo[1].path" class="w-40"/>
+                            <img :src="logo[1].path" class="w-32 h-24 lg:w-48 lg:h-48"/>
                         </span>
                         <span class="flex flex-col justify-around">
                             <p class="text-teal-100 font-semibold text-3xl">Universitas Pendidikan Indonesia</p>

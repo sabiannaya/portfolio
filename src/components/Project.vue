@@ -53,7 +53,7 @@ const githubLink = [
     },
     {
         name: "smart_english",
-        link: "https://github.com/SmartEnglishTangerang/Smart_English_Website_Jatiuwung",
+        link: "https://github.com/TNAlthea/smart-english-copy.git",
         class: "fab fa-github-square fa-2xl"
     }
 ];

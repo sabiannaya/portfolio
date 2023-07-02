@@ -1,5 +1,5 @@
 <script setup>
-const bandungImg = "./bandung.jpeg";
+const bandungImg = "./myPhoto.jpeg";
 </script>
 
 <template>
