@@ -139,7 +139,7 @@ const githubLink = [
                             <img :src="item.path" />
                         </span>
                     </div>
-                    <div class="flex flex-col justify-between pt-10 sm:pt-0 px-10">
+                    <div class="flex flex-col justify-between pt-10 sm:pt-0 px-5 sm:px-10">
                         <span class="text-teal-300 text-xl">
                             <p>
                                 I contributed to the development of an English tutoring website application called 'Smart
