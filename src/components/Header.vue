@@ -58,6 +58,11 @@ const toggleNavCollapse = () => {
                 <p class="text-teal-400">C.</p>
                 <p class="text-teal-100">Projects</p>
             </router-link>
+            <span class="pt-5">
+                <a :href="CVUrl" target="_blank" class="border border-teal-400 rounded-lg text-teal-400 py-2 px-5 flex items-center justify-center hover:bg-teal-400 hover:text-slate-900 hover:font-semibold">
+                    <p>CV</p>
+                </a>
+            </span>
         </nav>
     </div>
 </template>
