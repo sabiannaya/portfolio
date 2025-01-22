@@ -28,17 +28,17 @@ const projects = [
     githubLink: 'https://github.com/sabiannaya/meatengo',
     img: [
       {
-        name: 'logo',
+        name: 'Meatengo Logo',
         path: './meatengo/meatengo logo.png',
         orientation: getOrientation('./meatengo/meatengo logo.png')
       },
       {
-        name: 'admin',
+        name: 'Admin Panel',
         path: './meatengo/[admin] inventory management.png',
         orientation: getOrientation('./meatengo/[admin] inventory management.png')
       },
       {
-        name: 'cashier',
+        name: 'Cashier Panel',
         path: './meatengo/[cashier] dashboard.png',
         orientation: getOrientation('./meatengo/[cashier] dashboard.png')
       }
@@ -57,17 +57,17 @@ const projects = [
     githubLink: 'https://github.com/sabiannaya/Perpuskom',
     img: [
       {
-        name: 'splash_screen',
+        name: 'Splash Screen',
         path: './perpuskom/splash screen.png',
         orientation: getOrientation('./perpuskom/splash screen.png')
       },
       {
-        name: 'book_detail',
+        name: 'Book Detail',
         path: './perpuskom/book detail.png',
         orientation: getOrientation('./perpuskom/book detail.png')
       },
       {
-        name: 'welcome_screen',
+        name: 'Welcome Screen',
         path: './perpuskom/welcome screen.png',
         orientation: getOrientation('./perpuskom/welcome screen.png')
       }
@@ -86,12 +86,12 @@ const projects = [
     githubLink: 'https://github.com/sabiannaya/smart-english-copy.git',
     img: [
       {
-        name: 'desktop',
+        name: 'Welcome Screen',
         path: './smart english/Desktop.png',
         orientation: getOrientation('./smart english/Desktop.png')
       },
       {
-        name: 'login',
+        name: 'Login Page',
         path: './smart english/login.png',
         orientation: getOrientation('./smart english/login.png')
       }
@@ -108,6 +108,7 @@ const projects = [
     ],
     techStack: 'HTML, CSS, Laravel 10, mySQL, Tailwind CSS, Docker, Nginx',
     githubLink: null,
+    websiteLink: 'https://bangunanxpress.com',
     img: [
       {
         name: 'Dashboard',
@@ -226,21 +227,33 @@ const githubIconClass = 'fab fa-github-square fa-2xl'
                 >
                   {{ item.techStack }}
                 </p>
-                <a
-                  v-if="item.githubLink"
-                  class="flex flex-row pt-2 md:pt-0 gap-5 items-center justify-end hover:text-teal-500 sm:ps-0"
-                  :href="item.githubLink"
-                  target="_blank"
-                >
-                  <p>See code on GitHub</p>
-                  <i :class="githubIconClass"></i>
-                </a>
-                <p
-                  v-else
-                  class="flex flex-row pt-2 md:pt-0 gap-5 items-center justify-end text-gray-400 sm:ps-0"
-                >
-                  Private code
-                </p>
+                <span v-if="item.githubLink">
+                  <a
+                    class="flex flex-row pt-2 md:pt-0 gap-5 items-center justify-end hover:text-teal-500 sm:ps-0"
+                    :href="item.githubLink"
+                    target="_blank"
+                  >
+                    <p>See code on GitHub</p>
+                    <i :class="githubIconClass"></i>
+                  </a>
+                </span>
+                <span v-else-if="item.websiteLink">
+                  <a
+                    :href="item.websiteLink"
+                    target="_blank"
+                    class="flex flex-row pt-2 md:pt-0 gap-5 items-center justify-end hover:text-teal-500 sm:ps-0"
+                  >
+                    <p>Visit website</p>
+                    <i class="fas fa-external-link-square-alt fa-2xl"></i>
+                  </a>
+                </span>
+                <span v-else>
+                  <p
+                    class="flex flex-row pt-2 md:pt-0 gap-5 items-center justify-end text-gray-400 sm:ps-0"
+                  >
+                    Private code
+                  </p>
+                </span>
               </section>
             </section>
           </div>
