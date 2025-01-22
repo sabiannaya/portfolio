@@ -3,7 +3,7 @@
 const socials = [
     {
         name: 'github',
-        link: "https://github.com/TNAlthea",
+        link: "https://github.com/sabiannaya",
         class: "fab fa-github-square"
     },
     {
@@ -44,9 +44,9 @@ const socials = [
 
     <div class="hidden sm:flex sm:flex-col items-center gap-10 w-fit h-fit fixed bottom-3 sm:bottom-0 -right-16">
         <!-- email -->
-        <a href="mailto:sabiannaya@upi.edu">
-            <p class="sm:rotate-90 sm:-translate-y-28 text-sm text-teal-100 martian-mono hover:text-teal-300" style="letter-spacing: 5pt;">
-                Sabiannaya@upi.edu
+        <a href="mailto:sabiannaya@gmail.com">
+            <p class="sm:rotate-90 sm:-translate-y-32 text-sm text-teal-100 martian-mono hover:text-teal-300" style="letter-spacing: 5pt;">
+                Sabiannaya@gmail.com
             </p>
         </a>
             

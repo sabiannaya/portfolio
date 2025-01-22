@@ -16,7 +16,7 @@ const logo = [
         <div class="flex flex-row items-center">
             <span class="w-[95vw] md:w-[60vw] h-full justify-center flex flex-col gap-5">
                 <span
-                    class="text-4xl text-teal-50 font-bold bg-teal-500 w-fit translate-x-1/3 sm:translate-x-[24.5vw] translate-y-12 px-5 py-2 rounded-sm">
+                    class="text-4xl text-teal-50 font-bold bg-teal-500 w-fit translate-x-1/3 sm:translate-x-[26vw] translate-y-12 px-5 py-2 rounded-sm">
                     Education
                 </span>
                 <div class="border border-teal-100 px-3 md:px-10 pt-16 pb-8">
@@ -39,9 +39,8 @@ const logo = [
                         <span class="flex flex-col justify-around">
                             <p class="text-teal-100 font-semibold text-xl sm:text-2xl md:text-3xl">Universitas Pendidikan Indonesia</p>
                             <p class="text-teal-100 text-lg sm:text-xl md:text-2xl">Computer Science</p>
-                            <p class="text-slate-300 text-base sm:text-lg md:text-xl">2020 - Present</p>
-                            <p class="text-slate-300 text-base sm:text-lg md:text-xl">Current GPA: 3.76</p>
-                            <p class="text-slate-300 text-base sm:text-lg md:text-xl">PTESOL Score: 570</p>
+                            <p class="text-slate-300 text-base sm:text-lg md:text-xl">2020 - 2024</p>
+                            <p class="text-slate-300 text-base sm:text-lg md:text-xl">GPA: 3.77/4.00</p>
                         </span>
                     </div>
                 </div>

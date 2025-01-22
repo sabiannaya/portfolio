@@ -1,8 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import index from '../components/index.vue'
-import Intro from '../components/Intro.vue'
-import Education from '../components/Education.vue'
-import Project from '../components/Project.vue'
+import IndexView from '../views/IndexView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -10,23 +7,9 @@ const router = createRouter({
     {
       path: '/',
       name: 'index',
-      component: index
+      component: IndexView
     }
-    // {
-    //   path: '/intro',
-    //   name: 'intro',
-    //   component: Intro
-    // },
-    // {
-    //   path: '/education',
-    //   name: 'education',
-    //   component: Education
-    // },
-    // {
-    //   path: '/project',
-    //   name: 'project',
-    //   component: Project
-    // },
+
   ],
   scrollBehavior(to, from, savedPosition) {
     if (savedPosition) {

@@ -1,6 +1,5 @@
 <script setup>
-import { RouterLink, RouterView } from 'vue-router'
-import index from './components/index.vue';
+import { RouterView } from 'vue-router'
 
 </script>
 

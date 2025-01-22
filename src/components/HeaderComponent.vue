@@ -4,7 +4,7 @@ import { ref } from 'vue';
 import { Bars3Icon } from '@heroicons/vue/24/solid';
 
 
-const CVUrl = "https://drive.google.com/file/d/1yPnxrwVsv_OkbRVjN2WJ6gLNkK4ovkkp/view?usp=sharing";
+const CVUrl = "https://drive.google.com/file/d/1VNs0AENFvxa1O4oJGPlnBeA8a3lRhH9E/view?usp=sharing";
 let isShowingNavCollapse = ref(false);
 
 const toggleNavCollapse = () => {
@@ -30,8 +30,12 @@ const toggleNavCollapse = () => {
                 <p class="text-teal-400">B.</p>
                 <p class="text-teal-100 hover:text-teal-400">Education</p>
             </router-link>
-            <router-link class="flex flex-row gap-2" to="/#project">
+            <router-link class="flex flex-row gap-2" to="/#work-experience">
                 <p class="text-teal-400">C.</p>
+                <p class="text-teal-100 hover:text-teal-400">Work Experience</p>
+            </router-link>
+            <router-link class="flex flex-row gap-2" to="/#project">
+                <p class="text-teal-400">D.</p>
                 <p class="text-teal-100 hover:text-teal-400">Projects</p>
             </router-link>
             <a :href="CVUrl" target="_blank" class="border border-teal-400 rounded-lg text-teal-400 py-2 px-5 flex items-center justify-center hover:bg-teal-400 hover:text-slate-900 hover:font-semibold">
@@ -54,8 +58,12 @@ const toggleNavCollapse = () => {
                 <p class="text-teal-400">B.</p>
                 <p class="text-teal-100">Education</p>
             </router-link>
-            <router-link class="flex flex-row gap-2" to="/#project">
+            <router-link class="flex flex-row gap-2" to="/#work-experience">
                 <p class="text-teal-400">C.</p>
+                <p class="text-teal-100">Work Experience</p>
+            </router-link>
+            <router-link class="flex flex-row gap-2" to="/#project">
+                <p class="text-teal-400">D.</p>
                 <p class="text-teal-100">Projects</p>
             </router-link>
             <span class="pt-5">
