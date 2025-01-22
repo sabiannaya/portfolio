@@ -27,15 +27,19 @@ const experiences = ref([
           <div v-for="(experience, index) in experiences" :key="index" class="flex flex-col gap-5">
             <div class="grid grid-cols-2">
               <div>
+                <h1 class="text-3xl text-teal-200 font-semibold">{{ experience.company }}</h1>
                 <h2 class="text-lg text-teal-100">{{ experience.period }}</h2>
               </div>
               <div>
-                <h1 class="text-3xl text-teal-200 font-semibold">{{ experience.company }}</h1>
                 <h2 class="text-xl text-teal-100">{{ experience.position }}</h2>
                 <h2 class="text-lg text-teal-100">{{ experience.type }}</h2>
                 <p class="text-lg text-teal-50">{{ experience.description }}</p>
                 <ol class="grid grid-cols-3 pt-3">
-                  <li v-for="(tech, index) in experience.technologies" :key="index" class="text-md text-gray-400">
+                  <li
+                    v-for="(tech, index) in experience.technologies"
+                    :key="index"
+                    class="text-md text-gray-400"
+                  >
                     {{ tech }}
                   </li>
                 </ol>
