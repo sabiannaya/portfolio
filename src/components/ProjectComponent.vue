@@ -221,7 +221,7 @@ const githubIconClass = 'fab fa-github-square fa-2xl'
                   <p class="text-teal-300 lg:text-xl text-justify">{{ desc }}</p>
                 </div>
               </section>
-              <section class="flex flex-col md:grid md:grid-cols-2 text-teal-50 sm:pt-0">
+              <section class="flex flex-col items-center md:grid md:grid-cols-2 text-teal-50 sm:pt-0">
                 <p
                   class="pr-5 border-b pb-2 md:pb-0 md:pr-5 md:border-r border-lime-100 sm:pr-0 sm:border-0"
                 >
