@@ -106,7 +106,7 @@ const projects = [
 
       'As part of my thesis project, I developed both the front end using Vue 3 and the back end using Express JS entirely on my own.\n',
 
-      'I also developed the IoT components, which include the ESP32 with a PZEM004-T sensor for monitoring, relays for device control, an I2C LCD touchscreen display for data visualization, and a buzzer to alert users when usage exceeds the set limit.',
+      'I also developed the IoT components, which include the ESP32 with a PZEM004-T sensor for monitoring, relays for device control, an I2C LCD for data visualization, and a buzzer to alert users when usage exceeds the set limit.',
     ],
     techStack: 'HTML, CSS, Vue 3, Express JS, mySQL, Tailwind CSS, Ino, MQTT',
     githubLink: 'https://github.com/sabiannaya/EnergyMonitor.git',
