@@ -98,6 +98,42 @@ const projects = [
     ]
   },
   {
+    name: 'Smergy',
+    year: 2024,
+    type: 'Thesis',
+    description: [
+      'Smergy is a web-based application designed to help users monitor their electricity usage and manage electronic devices according to their needs and preferences.\n',
+
+      'As part of my thesis project, I developed both the front end using Vue 3 and the back end using Express JS entirely on my own.\n',
+
+      'I also developed the IoT components, which include the ESP32 with a PZEM004-T sensor for monitoring, relays for device control, an I2C LCD touchscreen display for data visualization, and a buzzer to alert users when usage exceeds the set limit.',
+    ],
+    techStack: 'HTML, CSS, Vue 3, Express JS, mySQL, Tailwind CSS, Ino, MQTT',
+    githubLink: 'https://github.com/sabiannaya/EnergyMonitor.git',
+    img: [
+      {
+        name: 'Dashboard',
+        path: './smergy/dashboard.png',
+        orientation: getOrientation('./smergy/dashboard.png')
+      },
+      {
+        name: 'Monitor',
+        path: './smergy/monitor.png',
+        orientation: getOrientation('./smergy/monitor.png')
+      },
+      {
+        name: 'Basic Log',
+        path: './smergy/log_basic.png',
+        orientation: getOrientation('./smergy/log_basic.png')
+      },
+      {
+        name: 'Log Details',
+        path: './smergy/log_details.png',
+        orientation: getOrientation('./smergy/log_details.png')
+      }
+    ]
+  },
+  {
     name: 'Bangunan Xpress',
     year: '2024-2025',
     type: 'Freelance',
@@ -221,7 +257,9 @@ const githubIconClass = 'fab fa-github-square fa-2xl'
                   <p class="text-teal-300 lg:text-xl text-justify">{{ desc }}</p>
                 </div>
               </section>
-              <section class="flex flex-col items-center md:grid md:grid-cols-2 text-teal-50 sm:pt-0">
+              <section
+                class="flex flex-col items-center md:grid md:grid-cols-2 text-teal-50 sm:pt-0"
+              >
                 <p
                   class="pr-5 border-b pb-2 md:pb-0 md:pr-5 md:border-r border-lime-100 sm:pr-0 sm:border-0"
                 >
